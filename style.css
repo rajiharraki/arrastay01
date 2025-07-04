@@ -1,0 +1,118 @@
+/*
+Theme Name: ArraStay Neo
+Theme URI: https://arrakiweb.xyz
+Author: ArrakiWeb
+Description: Tema minimalis untuk integrasi dengan plugin Arrastay Core, Elementor-ready.
+Version: 1.0
+*/
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  background: #f8f9fa;
+  color: #2b2b2b;
+}
+
+.arrastay-listings-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-top: 24px;
+}
+
+.arrastay-listing-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px #0001;
+  width: 280px;
+  padding: 18px 14px 18px 14px;
+  text-align: center;
+  transition: box-shadow .2s;
+}
+
+.arrastay-listing-card:hover {
+  box-shadow: 0 6px 20px #0002;
+}
+
+.arrastay-listing-img {
+  width: 100%;
+  border-radius: 12px;
+  height: 160px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.arrastay-detail-btn {
+  margin-top: 12px;
+  background: #673ab7;
+  color: #fff;
+  border: none;
+  padding: 8px 24px;
+  border-radius: 10px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background .2s;
+}
+
+.arrastay-detail-btn:hover {
+  background: #512da8;
+}
+
+.arrastay-booking-form {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px #0001;
+  padding: 30px 24px;
+  margin: 16px 0 30px 0;
+}
+
+.arrastay-booking-form input,
+.arrastay-booking-form select {
+  display: block;
+  width: 100%;
+  padding: 8px 10px;
+  margin-bottom: 14px;
+  border-radius: 6px;
+  border: 1px solid #d3d3d3;
+  font-size: 1em;
+}
+
+.arrastay-booking-form button[type="submit"] {
+  background: #673ab7;
+  color: #fff;
+  border: none;
+  padding: 8px 24px;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.arrastay-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 16px 0;
+}
+
+.arrastay-gallery-img {
+  width: 110px;
+  height: 70px;
+  border-radius: 6px;
+  object-fit: cover;
+  box-shadow: 0 1px 4px #0002;
+}
+
+@media (max-width: 700px) {
+  .arrastay-listings-grid {
+    flex-direction: column;
+    gap: 14px;
+  }
+  .arrastay-listing-card {
+    width: 98%;
+    margin: 0 auto;
+  }
+  .arrastay-gallery-img {
+    width: 80px;
+    height: 52px;
+  }
+}
